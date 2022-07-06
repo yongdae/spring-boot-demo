@@ -34,7 +34,10 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 
 	implementation("org.springframework.boot:spring-boot-starter-jdbc:2.7.1")
-	compileOnly("com.h2database:h2:2.1.214")
+	implementation("com.h2database:h2:2.1.214")
+
+	implementation("org.hibernate.validator:hibernate-validator")
+	implementation("org.glassfish:jakarta.el:4.0.2")
 }
 
 tasks.withType<KotlinCompile> {
